@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "/components/ui/button";
 
 export default function CodexEntryPage() {
   const router = useRouter();
@@ -30,7 +29,11 @@ export default function CodexEntryPage() {
       <div className="p-8 text-red-400 text-center">
         {error}
         <br />
-        <Link href="/"><Button className="mt-4">Back to Home</Button></Link>
+        <Link href="/">
+          <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+            Back to Home
+          </button>
+        </Link>
       </div>
     );
   }
@@ -53,7 +56,11 @@ export default function CodexEntryPage() {
         ))}
       </div>
       <div className="text-center mt-12">
-        <Link href="/"><Button variant="outline">Return to Codex</Button></Link>
+        <Link href="/">
+          <button className="px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition">
+            Return to Codex
+          </button>
+        </Link>
       </div>
     </div>
   );
