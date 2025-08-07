@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "/components/ui/button";
 
 export default function ScrollEntryPage() {
   const router = useRouter();
