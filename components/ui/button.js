@@ -1,6 +1,6 @@
 // components/ui/button.js
 
-export function Button({ children, className = "", variant = "default", ...props }) {
+export function button({ children, className = "", variant = "default", ...props }) {
   let baseStyle =
     "inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded transition";
 
